@@ -40,11 +40,5 @@
     "mood": 9,
     "note": "shipped the toy",
     "createdAt": "2026-06-03T20:00:00.000Z"
-  },
-  {
-    "date": "2026-06-03",
-    "mood": 7,
-    "note": "e2e write test by Claude",
-    "createdAt": "2026-06-03T07:48:15.180Z"
   }
 ]

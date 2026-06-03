@@ -1,9 +1,50 @@
 [
-  { "date": "2026-05-28", "mood": 6, "note": "ordinary day", "createdAt": "2026-05-28T20:00:00.000Z" },
-  { "date": "2026-05-29", "mood": 7, "note": "", "createdAt": "2026-05-29T20:00:00.000Z" },
-  { "date": "2026-05-30", "mood": 5, "note": "tired", "createdAt": "2026-05-30T20:00:00.000Z" },
-  { "date": "2026-05-31", "mood": 8, "note": "weekend!", "createdAt": "2026-05-31T20:00:00.000Z" },
-  { "date": "2026-06-01", "mood": 7, "note": "", "createdAt": "2026-06-01T20:00:00.000Z" },
-  { "date": "2026-06-02", "mood": 6, "note": "monday", "createdAt": "2026-06-02T20:00:00.000Z" },
-  { "date": "2026-06-03", "mood": 9, "note": "shipped the toy", "createdAt": "2026-06-03T20:00:00.000Z" }
+  {
+    "date": "2026-05-28",
+    "mood": 6,
+    "note": "ordinary day",
+    "createdAt": "2026-05-28T20:00:00.000Z"
+  },
+  {
+    "date": "2026-05-29",
+    "mood": 7,
+    "note": "",
+    "createdAt": "2026-05-29T20:00:00.000Z"
+  },
+  {
+    "date": "2026-05-30",
+    "mood": 5,
+    "note": "tired",
+    "createdAt": "2026-05-30T20:00:00.000Z"
+  },
+  {
+    "date": "2026-05-31",
+    "mood": 8,
+    "note": "weekend!",
+    "createdAt": "2026-05-31T20:00:00.000Z"
+  },
+  {
+    "date": "2026-06-01",
+    "mood": 7,
+    "note": "",
+    "createdAt": "2026-06-01T20:00:00.000Z"
+  },
+  {
+    "date": "2026-06-02",
+    "mood": 6,
+    "note": "monday",
+    "createdAt": "2026-06-02T20:00:00.000Z"
+  },
+  {
+    "date": "2026-06-03",
+    "mood": 9,
+    "note": "shipped the toy",
+    "createdAt": "2026-06-03T20:00:00.000Z"
+  },
+  {
+    "date": "2026-06-03",
+    "mood": 7,
+    "note": "e2e write test by Claude",
+    "createdAt": "2026-06-03T07:48:15.180Z"
+  }
 ]

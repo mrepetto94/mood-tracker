@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Tracker — a GitHub Pages toy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>🌤️ Mood Tracker</h1>
+      <p class="subtitle">A toy that saves form submissions to GitHub and charts them over time.</p>
+    </header>
+
+    <section class="chart-wrap">
+      <canvas id="chart" height="170"></canvas>
+      <p id="empty-state" class="empty hidden">No entries yet — log your first mood below.</p>
+    </section>
+
+    <form id="entry-form" autocomplete="off">
+      <div class="field">
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <div class="field">
+        <label for="mood">Mood: <output id="mood-out">7</output> <span id="mood-emoji" aria-hidden="true">😊</span></label>
+        <input type="range" id="mood" name="mood" min="1" max="10" step="1" value="7" />
+        <div class="scale"><span>1 · awful</span><span>10 · great</span></div>
+      </div>
+
+      <div class="field">
+        <label for="note">Note <span class="muted">(optional)</span></label>
+        <input type="text" id="note" name="note" maxlength="120" placeholder="what happened?" />
+      </div>
+
+      <button type="submit" id="submit-btn">Save entry</button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+
+    <details class="settings">
+      <summary>⚙️ Save settings (GitHub token)</summary>
+      <p class="muted small">
+        To save, paste a <strong>fine-grained PAT</strong> scoped to <em>only this repo</em>
+        with <strong>Contents: Read and write</strong>. It is stored in <em>this browser only</em>
+        (localStorage) and never committed. See the README for step-by-step setup.
+      </p>
+      <div class="field">
+        <label for="token">GitHub token</label>
+        <input type="password" id="token" placeholder="github_pat_…" />
+      </div>
+      <div class="row">
+        <button type="button" id="save-token">Save token</button>
+        <button type="button" id="clear-token" class="ghost">Clear</button>
+        <span id="token-status" class="muted small"></span>
+      </div>
+      <p class="muted small" id="repo-info"></p>
+    </details>
+
+    <footer>
+      <span id="count"></span>
+      <a href="https://github.com" id="repo-link" target="_blank" rel="noopener" hidden>view repo →</a>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
